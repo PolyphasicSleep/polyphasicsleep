@@ -9,8 +9,7 @@ function getCookie(name){
     let decodedCookie = decodeURIComponent(cookie);
     let cook = decodedCookie.split(";");
     let length = cook.length;
-    let i = 0;
-    for(i=0;i<length;i++){
+    for(let i=0;i<length;i++){
         let testElement = cook[i];
         while (testElement.charAt(0)===" "){
             testElement=testElement.substring(1, testElement.length);
